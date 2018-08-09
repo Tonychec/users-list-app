@@ -1,0 +1,6 @@
+framework module SMDataDiller {
+  umbrella header "SMDataDiller-umbrella.h"
+
+  export *
+  module * { export * }
+}

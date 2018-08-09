@@ -1,0 +1,11 @@
+source "https://github.com/CocoaPods/Specs.git"
+source "https://github.com/SMCorpporation/SMPodSpecs.git"
+
+use_frameworks!
+
+target 'users list app' do
+	pod "SMDataDiller", "0.2.1"
+	pod "Alamofire", "4.7.2"
+	pod "Sync”, “4.1.3”
+	pod "SDWebImage", "4.3.3"
+end

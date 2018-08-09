@@ -41,3 +41,27 @@ extension ULAStrings {
         }
     }
 }
+
+//MARK: - Tabs
+extension ULAStrings {
+    enum Tabs: RawRepresentable {
+        typealias RawValue = String
+        
+        case users
+        case saved
+        
+        var rawValue: String {
+            switch self {
+            case .users:
+                return "Users"
+                
+            case .saved:
+                return "Saved"
+            }
+        }
+        
+        init?(rawValue: String) {
+            return nil
+        }
+    }
+}

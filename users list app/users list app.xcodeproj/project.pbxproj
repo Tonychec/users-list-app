@@ -17,6 +17,7 @@
 		E7AFBA50211CABAA0072C122 /* ULAValidationString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA4F211CABAA0072C122 /* ULAValidationString.swift */; };
 		E7AFBA52211CADBE0072C122 /* ULAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA51211CADBE0072C122 /* ULAString.swift */; };
 		E7AFBA56211CAECC0072C122 /* ULAStringDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA55211CAECC0072C122 /* ULAStringDefines.swift */; };
+		E7AFBA59211CC5930072C122 /* ULARootTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA58211CC5930072C122 /* ULARootTransaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E7AFBA4F211CABAA0072C122 /* ULAValidationString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAValidationString.swift; sourceTree = "<group>"; };
 		E7AFBA51211CADBE0072C122 /* ULAString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAString.swift; sourceTree = "<group>"; };
 		E7AFBA55211CAECC0072C122 /* ULAStringDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAStringDefines.swift; sourceTree = "<group>"; };
+		E7AFBA58211CC5930072C122 /* ULARootTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULARootTransaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				E7AFBA45211CA8A80072C122 /* API */,
 				E7AFBA46211CA91C0072C122 /* Defines */,
 				E7AFBA4A211CA9F00072C122 /* Extensions */,
+				E7AFBA57211CC5690072C122 /* Transactions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -117,6 +120,14 @@
 				E7AFBA51211CADBE0072C122 /* ULAString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7AFBA57211CC5690072C122 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFBA58211CC5930072C122 /* ULARootTransaction.swift */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				E7AFBA49211CA94E0072C122 /* ULADefines.swift in Sources */,
 				E7AFBA37211CA7930072C122 /* users_list_app.xcdatamodeld in Sources */,
 				E7AFBA4C211CAA390072C122 /* ULAUIImage.swift in Sources */,
+				E7AFBA59211CC5930072C122 /* ULARootTransaction.swift in Sources */,
 				E7AFBA4E211CAB100072C122 /* ULANSManagedObjectContext.swift in Sources */,
 				E7AFBA50211CABAA0072C122 /* ULAValidationString.swift in Sources */,
 				E7AFBA2F211CA7930072C122 /* AppDelegate.swift in Sources */,

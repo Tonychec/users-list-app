@@ -16,12 +16,13 @@ class ULAStrings {
 
 //MARK: - Validations
 extension ULAStrings {
-    enum Validation: RawRepresentable {
+    enum Errors: RawRepresentable {
         typealias RawValue = String
         
         case blank
         case emailNotValid
         case emailBlank
+        case someError
         
         var rawValue: String {
             switch self {
@@ -33,6 +34,9 @@ extension ULAStrings {
                 
             case .emailBlank:
                 return "Email shouldn't be blank"
+                
+            case .someError:
+                return "Some error occured. Please try again later"
             }
         }
         

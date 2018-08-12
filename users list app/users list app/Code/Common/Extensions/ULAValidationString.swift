@@ -16,18 +16,18 @@ extension FFValidationString {
     
     func isEmailValid() -> FFValidationResult {
         guard !self.isEmpty else {
-            return (false, ULAStrings.Validation.emailBlank.rawValue)
+            return (false, ULAStrings.Errors.emailBlank.rawValue)
         }
         
         let emailRegex = "^[+\\w\\.\\-']+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{2,})+$"
         let predicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         let result = predicate.evaluate(with:self)
         
-        return (result, result ? nil : ULAStrings.Validation.emailNotValid.rawValue)
+        return (result, result ? nil : ULAStrings.Errors.emailNotValid.rawValue)
     }
     
     func isLengthValid(stringPrefixForErrorMessage: String = "") -> FFValidationResult {
-        let errorMessage = stringPrefixForErrorMessage.isEmpty ? ULAStrings.Validation.blank.rawValue.capitalizingFirstLetter() : stringPrefixForErrorMessage + " " + ULAStrings.Validation.blank.rawValue
+        let errorMessage = stringPrefixForErrorMessage.isEmpty ? ULAStrings.Errors.blank.rawValue.capitalizingFirstLetter() : stringPrefixForErrorMessage + " " + ULAStrings.Errors.blank.rawValue
         let comp = self.components(separatedBy: CharacterSet.whitespaces).filter { !$0.isEmpty }
         
         if comp.count > 1, comp.count < 31 {

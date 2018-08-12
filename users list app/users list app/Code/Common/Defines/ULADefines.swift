@@ -8,6 +8,9 @@
 
 import UIKit
 
-let kDefaultCellHeight = 100
-
 let kBaseURL = "https://randomuser.me/api/"
+let kDefaultParams: [String: Any] = ["inc"     : "name,phone,picture,email",
+                                     "seed"    : "abc",
+                                     "results" : kDefaultResultQuantity]
+let kSomeErrorCode = -1
+let kDefaultResultQuantity = 10

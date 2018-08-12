@@ -16,3 +16,5 @@ let kDefaultParams: [String: Any] = ["inc"     : "name,phone,picture,email",
                                      "results" : kDefaultResultQuantity]
 let kSomeErrorCode = -1
 let kDefaultResultQuantity = 10
+
+let kPullRefreshViewHeight: CGFloat = 40

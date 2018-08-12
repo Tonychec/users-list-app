@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ULASavedViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
+class ULASavedViewController: ULAUsersViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

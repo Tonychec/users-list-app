@@ -23,6 +23,12 @@
 /* Begin PBXBuildFile section */
 		35AD3BB74D3951F044A74D2B /* Pods_users_list_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F95302B2FE86291630042A /* Pods_users_list_app.framework */; };
 		E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44A21200D4200AD0E9B /* ULAPaginator.swift */; };
+		E749B44E2120135E00AD0E9B /* ULABaseDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44D2120135E00AD0E9B /* ULABaseDataViewController.swift */; };
+		E749B4502120140000AD0E9B /* ULAUsersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44F2120140000AD0E9B /* ULAUsersDataProvider.swift */; };
+		E749B4522120178E00AD0E9B /* ULAAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B4512120178E00AD0E9B /* ULAAlert.swift */; };
+		E749B454212019F500AD0E9B /* ULATableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B453212019F500AD0E9B /* ULATableView.swift */; };
+		E749B45821201B3B00AD0E9B /* ULARefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B45721201B3B00AD0E9B /* ULARefreshView.swift */; };
+		E749B45A21201B8400AD0E9B /* ULARefreshViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B45921201B8400AD0E9B /* ULARefreshViewAnimator.swift */; };
 		E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519300211FE2F900CC9798 /* ULADataStack.swift */; };
 		E7519305211FE78400CC9798 /* _Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519302211FE78400CC9798 /* _Picture.swift */; };
 		E7519306211FE78400CC9798 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519303211FE78400CC9798 /* _User.swift */; };
@@ -45,7 +51,6 @@
 		E7AFBA5F211CC9360072C122 /* ULAUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA5D211CC9360072C122 /* ULAUsersViewController.swift */; };
 		E7AFBA60211CC9360072C122 /* ULAUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBA5E211CC9360072C122 /* ULAUsersViewController.xib */; };
 		E7AFBA64211CC9620072C122 /* ULASavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA62211CC9620072C122 /* ULASavedViewController.swift */; };
-		E7AFBA65211CC9620072C122 /* ULASavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBA63211CC9620072C122 /* ULASavedViewController.xib */; };
 		E7AFBA6A211CD0660072C122 /* ULAUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA68211CD0660072C122 /* ULAUserTableViewCell.swift */; };
 		E7AFBA6B211CD0660072C122 /* ULAUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBA69211CD0660072C122 /* ULAUserTableViewCell.xib */; };
 		E7D3284B211CE05A00F59E07 /* ULABaseCoreTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3284A211CE05A00F59E07 /* ULABaseCoreTableViewDataSource.swift */; };
@@ -58,6 +63,12 @@
 		301CBCEA02297966BB8002D4 /* Pods-users list app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.debug.xcconfig"; sourceTree = "<group>"; };
 		42F95302B2FE86291630042A /* Pods_users_list_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_users_list_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E749B44A21200D4200AD0E9B /* ULAPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAPaginator.swift; sourceTree = "<group>"; };
+		E749B44D2120135E00AD0E9B /* ULABaseDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULABaseDataViewController.swift; sourceTree = "<group>"; };
+		E749B44F2120140000AD0E9B /* ULAUsersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAUsersDataProvider.swift; sourceTree = "<group>"; };
+		E749B4512120178E00AD0E9B /* ULAAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAAlert.swift; sourceTree = "<group>"; };
+		E749B453212019F500AD0E9B /* ULATableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULATableView.swift; sourceTree = "<group>"; };
+		E749B45721201B3B00AD0E9B /* ULARefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULARefreshView.swift; sourceTree = "<group>"; };
+		E749B45921201B8400AD0E9B /* ULARefreshViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULARefreshViewAnimator.swift; sourceTree = "<group>"; };
 		E7519300211FE2F900CC9798 /* ULADataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULADataStack.swift; sourceTree = "<group>"; };
 		E7519302211FE78400CC9798 /* _Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Picture.swift; sourceTree = "<group>"; };
 		E7519303211FE78400CC9798 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
@@ -82,7 +93,6 @@
 		E7AFBA5D211CC9360072C122 /* ULAUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAUsersViewController.swift; sourceTree = "<group>"; };
 		E7AFBA5E211CC9360072C122 /* ULAUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ULAUsersViewController.xib; sourceTree = "<group>"; };
 		E7AFBA62211CC9620072C122 /* ULASavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULASavedViewController.swift; sourceTree = "<group>"; };
-		E7AFBA63211CC9620072C122 /* ULASavedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ULASavedViewController.xib; sourceTree = "<group>"; };
 		E7AFBA68211CD0660072C122 /* ULAUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAUserTableViewCell.swift; sourceTree = "<group>"; };
 		E7AFBA69211CD0660072C122 /* ULAUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ULAUserTableViewCell.xib; sourceTree = "<group>"; };
 		E7AFBA6F211CD5A30072C122 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -107,8 +117,34 @@
 			isa = PBXGroup;
 			children = (
 				E749B44A21200D4200AD0E9B /* ULAPaginator.swift */,
+				E749B4512120178E00AD0E9B /* ULAAlert.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E749B44C2120134000AD0E9B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E749B44D2120135E00AD0E9B /* ULABaseDataViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E749B45521201B0F00AD0E9B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E749B45621201B1600AD0E9B /* Refresh */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E749B45621201B1600AD0E9B /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				E749B45721201B3B00AD0E9B /* ULARefreshView.swift */,
+				E749B45921201B8400AD0E9B /* ULARefreshViewAnimator.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		E75192FC211FE21900CC9798 /* Domain */ = {
@@ -228,6 +264,7 @@
 				E7AFBA4D211CAB100072C122 /* ULANSManagedObjectContext.swift */,
 				E7AFBA4F211CABAA0072C122 /* ULAValidationString.swift */,
 				E7AFBA51211CADBE0072C122 /* ULAString.swift */,
+				E749B453212019F500AD0E9B /* ULATableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,6 +280,7 @@
 		E7AFBA5A211CC74F0072C122 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E749B44C2120134000AD0E9B /* Base */,
 				E7AFBA5B211CC9010072C122 /* Users */,
 				E7AFBA5C211CC9090072C122 /* Saved */,
 			);
@@ -262,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				E7AFBA62211CC9620072C122 /* ULASavedViewController.swift */,
-				E7AFBA63211CC9620072C122 /* ULASavedViewController.xib */,
 			);
 			path = Saved;
 			sourceTree = "<group>";
@@ -270,6 +307,7 @@
 		E7AFBA66211CD0110072C122 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E749B45521201B0F00AD0E9B /* Custom */,
 				E7AFBA67211CD03D0072C122 /* Cells */,
 			);
 			path = Views;
@@ -315,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				E7D3284C211CE10000F59E07 /* ULABaseCoreDataProvider.swift */,
+				E749B44F2120140000AD0E9B /* ULAUsersDataProvider.swift */,
 			);
 			path = DataProviders;
 			sourceTree = "<group>";
@@ -395,7 +434,6 @@
 				E7AFBA3C211CA7950072C122 /* LaunchScreen.storyboard in Resources */,
 				E7AFBA39211CA7950072C122 /* Assets.xcassets in Resources */,
 				E7AFBA60211CC9360072C122 /* ULAUsersViewController.xib in Resources */,
-				E7AFBA65211CC9620072C122 /* ULASavedViewController.xib in Resources */,
 				E7AFBA6B211CD0660072C122 /* ULAUserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,15 +508,19 @@
 				E7AFBA56211CAECC0072C122 /* ULAStringDefines.swift in Sources */,
 				E7AFBA6A211CD0660072C122 /* ULAUserTableViewCell.swift in Sources */,
 				E7AFBA52211CADBE0072C122 /* ULAString.swift in Sources */,
+				E749B44E2120135E00AD0E9B /* ULABaseDataViewController.swift in Sources */,
 				E7519305211FE78400CC9798 /* _Picture.swift in Sources */,
 				E7AFBA49211CA94E0072C122 /* ULADefines.swift in Sources */,
+				E749B454212019F500AD0E9B /* ULATableView.swift in Sources */,
 				E7D3284F211CE17900F59E07 /* ULAUsersDataSource.swift in Sources */,
 				E7519306211FE78400CC9798 /* _User.swift in Sources */,
 				E7519307211FE78400CC9798 /* _Name.swift in Sources */,
 				E7AFBA37211CA7930072C122 /* users_list_app.xcdatamodeld in Sources */,
 				E7AFBA4C211CAA390072C122 /* ULAUIImage.swift in Sources */,
+				E749B45A21201B8400AD0E9B /* ULARefreshViewAnimator.swift in Sources */,
 				E7AFBA59211CC5930072C122 /* ULARootTransaction.swift in Sources */,
 				E7D3284B211CE05A00F59E07 /* ULABaseCoreTableViewDataSource.swift in Sources */,
+				E749B45821201B3B00AD0E9B /* ULARefreshView.swift in Sources */,
 				E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */,
 				E7519310211FE97800CC9798 /* ULAAPI.swift in Sources */,
 				E7AFBA64211CC9620072C122 /* ULASavedViewController.swift in Sources */,
@@ -488,8 +530,10 @@
 				E751930B211FE79500CC9798 /* Picture.swift in Sources */,
 				E7AFBA50211CABAA0072C122 /* ULAValidationString.swift in Sources */,
 				E7AFBA2F211CA7930072C122 /* AppDelegate.swift in Sources */,
+				E749B4502120140000AD0E9B /* ULAUsersDataProvider.swift in Sources */,
 				E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */,
 				E751930D211FE79500CC9798 /* Name.swift in Sources */,
+				E749B4522120178E00AD0E9B /* ULAAlert.swift in Sources */,
 				E751930C211FE79500CC9798 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

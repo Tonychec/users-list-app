@@ -22,7 +22,7 @@ class ULADataStack {
 extension DataStack {
     
     func performFetchRequestInBackgroundAndMigrateToMain<ObjectsType: NSManagedObject>(request: NSFetchRequest<NSFetchRequestResult>, completion: @escaping (_ objects: [ObjectsType]) -> Void) {
-        
+    
         performFetchRequestInBackground(request: request, andMigrateToContext: mainContext, completion: completion)
     }
     

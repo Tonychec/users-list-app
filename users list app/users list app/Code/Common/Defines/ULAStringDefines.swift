@@ -9,63 +9,36 @@
 import Foundation
 
 class ULAStrings {
-    
     private init() {}
 }
 
-
 //MARK: - Validations
 extension ULAStrings {
-    enum Errors: RawRepresentable {
-        typealias RawValue = String
-        
-        case blank
-        case emailNotValid
-        case emailBlank
-        case someError
-        
-        var rawValue: String {
-            switch self {
-            case .blank:
-                return "shouldn't be blank"
-                
-            case .emailNotValid:
-                return "This doesn’t look like a valid email. Please check the inputted email"
-                
-            case .emailBlank:
-                return "Email shouldn't be blank"
-                
-            case .someError:
-                return "Some error occured. Please try again later"
-            }
-        }
-        
-        init?(rawValue: String) {
-            return nil
-        }
+    
+    enum Errors: String {
+        case blank = "shouldn't be blank"
+        case emailNotValid = "This doesn’t look like a valid email. Please check the inputted email"
+        case emailBlank = "Email shouldn't be blank"
+        case someError = "Some error occured. Please try again later"
     }
 }
 
 //MARK: - Tabs
 extension ULAStrings {
-    enum Tabs: RawRepresentable {
-        typealias RawValue = String
-        
-        case users
-        case saved
-        
-        var rawValue: String {
-            switch self {
-            case .users:
-                return "Users"
-                
-            case .saved:
-                return "Saved"
-            }
-        }
-        
-        init?(rawValue: String) {
-            return nil
-        }
+    
+    enum Tabs: String {
+        case users = "Users"
+        case saved = "Saved"
+    }
+}
+
+//MARK: - Pagination
+extension ULAStrings {
+    
+    enum Pagination: String {
+        case pagination = "info"
+        case currentPage = "page"
+        case paginationError = "no pagination in request"
+        case results = "results"
     }
 }

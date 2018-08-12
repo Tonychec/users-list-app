@@ -8,6 +8,8 @@
 
 import UIKit
 
+let kDefaultAnimationDuration = 0.3
+
 let kBaseURL = "https://randomuser.me/api/"
 let kDefaultParams: [String: Any] = ["inc"     : "name,phone,picture,email",
                                      "seed"    : "abc",

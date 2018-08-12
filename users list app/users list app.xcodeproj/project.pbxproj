@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		35AD3BB74D3951F044A74D2B /* Pods_users_list_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F95302B2FE86291630042A /* Pods_users_list_app.framework */; };
+		E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44A21200D4200AD0E9B /* ULAPaginator.swift */; };
 		E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519300211FE2F900CC9798 /* ULADataStack.swift */; };
 		E7519305211FE78400CC9798 /* _Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519302211FE78400CC9798 /* _Picture.swift */; };
 		E7519306211FE78400CC9798 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519303211FE78400CC9798 /* _User.swift */; };
@@ -56,6 +57,7 @@
 		1C7EE24620C573516B4FC54D /* Pods-users list app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.release.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.release.xcconfig"; sourceTree = "<group>"; };
 		301CBCEA02297966BB8002D4 /* Pods-users list app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.debug.xcconfig"; sourceTree = "<group>"; };
 		42F95302B2FE86291630042A /* Pods_users_list_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_users_list_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E749B44A21200D4200AD0E9B /* ULAPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAPaginator.swift; sourceTree = "<group>"; };
 		E7519300211FE2F900CC9798 /* ULADataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULADataStack.swift; sourceTree = "<group>"; };
 		E7519302211FE78400CC9798 /* _Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Picture.swift; sourceTree = "<group>"; };
 		E7519303211FE78400CC9798 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E749B44921200D1700AD0E9B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E749B44A21200D4200AD0E9B /* ULAPaginator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E75192FC211FE21900CC9798 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +195,7 @@
 		E7AFBA44211CA8A00072C122 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E749B44921200D1700AD0E9B /* Services */,
 				E7AFBA45211CA8A80072C122 /* API */,
 				E7AFBA46211CA91C0072C122 /* Defines */,
 				E7AFBA4A211CA9F00072C122 /* Extensions */,
@@ -420,6 +431,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SMDataDiller/SMDataDiller.framework",
+				"${BUILT_PRODUCTS_DIR}/SMPullToRefresh/SMPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -427,6 +439,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMDataDiller.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +479,7 @@
 				E7AFBA4C211CAA390072C122 /* ULAUIImage.swift in Sources */,
 				E7AFBA59211CC5930072C122 /* ULARootTransaction.swift in Sources */,
 				E7D3284B211CE05A00F59E07 /* ULABaseCoreTableViewDataSource.swift in Sources */,
+				E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */,
 				E7519310211FE97800CC9798 /* ULAAPI.swift in Sources */,
 				E7AFBA64211CC9620072C122 /* ULASavedViewController.swift in Sources */,
 				E7AFBA5F211CC9360072C122 /* ULAUsersViewController.swift in Sources */,

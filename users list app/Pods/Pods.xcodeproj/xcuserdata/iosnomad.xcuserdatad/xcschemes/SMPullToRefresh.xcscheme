@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FDDA8AC36F9CE93B4D0E8984F11BAA19"
-               BlueprintName = "Sync"
+               BlueprintIdentifier = "EA6EAB47735977AA6321AD08384AE8A2"
+               BlueprintName = "SMPullToRefresh"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Sync.framework">
+               BuildableName = "SMPullToRefresh.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

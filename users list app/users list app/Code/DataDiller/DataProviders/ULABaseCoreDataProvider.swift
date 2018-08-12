@@ -18,7 +18,7 @@ class ULABaseCoreDataProvider: SMBaseDataProvider {
     var predicate: NSPredicate?
     var includesSubentities = false
     
-    init(withEntityName entityName: String, orderAttributeName: String = UserAttributes.email.rawValue, context: NSManagedObjectContext = ULADataStack.stack.mainContext) {
+    init(withEntityName entityName: String, orderAttributeName: String = ULAUserAttributes.email.rawValue, context: NSManagedObjectContext = ULADataStack.stack.mainContext) {
         self.entityName = entityName
         self.orderAttributeName = orderAttributeName
         self.context = context

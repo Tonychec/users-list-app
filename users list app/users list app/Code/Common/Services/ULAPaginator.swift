@@ -73,42 +73,40 @@ class ULAPaginator {
         isLoadData = true
         tableView?.startRefreshing(at: refreshAt)
         listTaskCreationHandler(currentPage).responseJSON { [weak self] (task) in
-            
-            
-//            self?.isLoadData = false
-//            DispatchQueue.main.asyncAfter(deadline: .now() + kDefaultAnimationDuration) {
-//                guard let `self` = self else {
-//                    return
-//                }
-//
-//                if self.automaticallyEndPullRefreshing {
-//                    self.tableView?.endRefreshing(at: refreshAt)
-//                }
-//
-//                if let error = task.error {
-//                    handler?(error)
-//                } else {
-//                    let result = task.result
-//                    if self.tableView?.refresher(at: .bottom) == nil {
-//                        self.addBottomRefreshControll()
-//                    }
-//
-//                    if let paginationJson = (result.value as! [String: Any])[ULAStrings.Pagination.pagination.rawValue] as? [String: Any],
-//                        let currentPage = paginationJson[ULAStrings.Pagination.currentPage.rawValue] as? Int{
-//                        self.currentPage = currentPage
-//                    } else {
-//                        fatalError(ULAStrings.Pagination.paginationError.rawValue)
-//                    }
-//
-//                    if let itemsJson = self.parser(result.value) {
-//                        if isNextPage {
-//                            self.parse(items: itemsJson, operations: [.insert, .update], handler: self.nextPageHandler)
-//                        } else {
-//                            self.parse(items: itemsJson, operations: .all, handler: self.refreshListHandler)
-//                        }
-//                    }
-//                }
-//            }
+            self?.isLoadData = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + kDefaultAnimationDuration) {
+                guard let `self` = self else {
+                    return
+                }
+
+                if self.automaticallyEndPullRefreshing {
+                    self.tableView?.endRefreshing(at: refreshAt)
+                }
+
+                if let error = task.error {
+                    handler?(error)
+                } else {
+                    let result = task.result
+                    if self.tableView?.refresher(at: .bottom) == nil {
+                        self.addBottomRefreshControll()
+                    }
+
+                    if let paginationJson = (result.value as! [String: Any])[ULAStrings.Pagination.pagination.rawValue] as? [String: Any],
+                        let currentPage = paginationJson[ULAStrings.Pagination.currentPage.rawValue] as? Int{
+                        self.currentPage = currentPage
+                    } else {
+                        fatalError(ULAStrings.Pagination.paginationError.rawValue)
+                    }
+
+                    if let itemsJson = self.parser(result.value) {
+                        if isNextPage {
+                            self.parse(items: itemsJson, operations: [.insert, .update], handler: self.nextPageHandler)
+                        } else {
+                            self.parse(items: itemsJson, operations: .all, handler: self.refreshListHandler)
+                        }
+                    }
+                }
+            }
         }
     }
 

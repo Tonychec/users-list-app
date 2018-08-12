@@ -1,25 +1,25 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to Picture.swift instead.
+// Make changes to ULAName.swift instead.
 
 import Foundation
 import CoreData
 
-public enum PictureAttributes: String {
-    case large = "large"
-    case medium = "medium"
-    case thumbnail = "thumbnail"
+public enum ULANameAttributes: String {
+    case first = "first"
+    case last = "last"
+    case title = "title"
 }
 
-public enum PictureRelationships: String {
+public enum ULANameRelationships: String {
     case user = "user"
 }
 
-open class _Picture: NSManagedObject {
+open class _ULAName: NSManagedObject {
 
     // MARK: - Class methods
 
     open class func entityName () -> String {
-        return "Picture"
+        return "ULAName"
     }
 
     open class func entity(managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
@@ -33,25 +33,25 @@ open class _Picture: NSManagedObject {
     }
 
     public convenience init?(managedObjectContext: NSManagedObjectContext) {
-        guard let entity = _Picture.entity(managedObjectContext: managedObjectContext) else { return nil }
+        guard let entity = _ULAName.entity(managedObjectContext: managedObjectContext) else { return nil }
         self.init(entity: entity, insertInto: managedObjectContext)
     }
 
     // MARK: - Properties
 
     @NSManaged open
-    var large: String?
+    var first: String?
 
     @NSManaged open
-    var medium: String?
+    var last: String?
 
     @NSManaged open
-    var thumbnail: String?
+    var title: String?
 
     // MARK: - Relationships
 
     @NSManaged open
-    var user: User
+    var user: ULAUser
 
 }
 

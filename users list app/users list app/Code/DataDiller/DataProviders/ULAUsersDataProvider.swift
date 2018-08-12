@@ -11,6 +11,6 @@ import Foundation
 class ULAUsersDataProvider: ULABaseCoreDataProvider {
     
     init() {
-        super.init(withEntityName: User.entityName())
+        super.init(withEntityName: ULAUser.entityName())
     }
 }

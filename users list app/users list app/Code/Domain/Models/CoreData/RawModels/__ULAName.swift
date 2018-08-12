@@ -1,25 +1,25 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to User.swift instead.
+// Make changes to ULAName.swift instead.
 
 import Foundation
 import CoreData
 
-public enum UserAttributes: String {
-    case email = "email"
-    case phone = "phone"
+public enum ULANameAttributes: String {
+    case first = "first"
+    case last = "last"
+    case title = "title"
 }
 
-public enum UserRelationships: String {
-    case name = "name"
-    case picture = "picture"
+public enum ULANameRelationships: String {
+    case user = "user"
 }
 
-open class _User: NSManagedObject {
+open class _ULAName: NSManagedObject {
 
     // MARK: - Class methods
 
     open class func entityName () -> String {
-        return "User"
+        return "ULAName"
     }
 
     open class func entity(managedObjectContext: NSManagedObjectContext) -> NSEntityDescription? {
@@ -33,25 +33,25 @@ open class _User: NSManagedObject {
     }
 
     public convenience init?(managedObjectContext: NSManagedObjectContext) {
-        guard let entity = _User.entity(managedObjectContext: managedObjectContext) else { return nil }
+        guard let entity = _ULAName.entity(managedObjectContext: managedObjectContext) else { return nil }
         self.init(entity: entity, insertInto: managedObjectContext)
     }
 
     // MARK: - Properties
 
     @NSManaged open
-    var email: String?
+    var first: String?
 
     @NSManaged open
-    var phone: String?
+    var last: String?
+
+    @NSManaged open
+    var title: String?
 
     // MARK: - Relationships
 
     @NSManaged open
-    var name: Name
-
-    @NSManaged open
-    var picture: Picture?
+    var user: ULAUser
 
 }
 

@@ -59,7 +59,7 @@ extension ULAUsersViewController {
 extension ULAUsersViewController {
     
     func setupPaginator() {
-        paginator = ULAPaginator(withTableView: tableView, entityName: User.entityName(), listTaskCreationHandler: ULAAPI.shared.loadUsersListCreationHendler)
+        paginator = ULAPaginator(withTableView: tableView, entityName: ULAUser.entityName(), listTaskCreationHandler: ULAAPI.shared.loadUsersListCreationHendler)
         
         paginator.refreshListHandler = { [unowned self] (error) in
             if let error = error {

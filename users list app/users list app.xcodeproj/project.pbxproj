@@ -22,6 +22,14 @@
 
 /* Begin PBXBuildFile section */
 		35AD3BB74D3951F044A74D2B /* Pods_users_list_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F95302B2FE86291630042A /* Pods_users_list_app.framework */; };
+		E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519300211FE2F900CC9798 /* ULADataStack.swift */; };
+		E7519305211FE78400CC9798 /* _Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519302211FE78400CC9798 /* _Picture.swift */; };
+		E7519306211FE78400CC9798 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519303211FE78400CC9798 /* _User.swift */; };
+		E7519307211FE78400CC9798 /* _Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519304211FE78400CC9798 /* _Name.swift */; };
+		E751930B211FE79500CC9798 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519308211FE79500CC9798 /* Picture.swift */; };
+		E751930C211FE79500CC9798 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7519309211FE79500CC9798 /* User.swift */; };
+		E751930D211FE79500CC9798 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751930A211FE79500CC9798 /* Name.swift */; };
+		E7519310211FE97800CC9798 /* ULAAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751930F211FE97800CC9798 /* ULAAPI.swift */; };
 		E7AFBA2F211CA7930072C122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA2E211CA7930072C122 /* AppDelegate.swift */; };
 		E7AFBA37211CA7930072C122 /* users_list_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA35211CA7930072C122 /* users_list_app.xcdatamodeld */; };
 		E7AFBA39211CA7950072C122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBA38211CA7950072C122 /* Assets.xcassets */; };
@@ -48,6 +56,14 @@
 		1C7EE24620C573516B4FC54D /* Pods-users list app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.release.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.release.xcconfig"; sourceTree = "<group>"; };
 		301CBCEA02297966BB8002D4 /* Pods-users list app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.debug.xcconfig"; sourceTree = "<group>"; };
 		42F95302B2FE86291630042A /* Pods_users_list_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_users_list_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7519300211FE2F900CC9798 /* ULADataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULADataStack.swift; sourceTree = "<group>"; };
+		E7519302211FE78400CC9798 /* _Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Picture.swift; sourceTree = "<group>"; };
+		E7519303211FE78400CC9798 /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
+		E7519304211FE78400CC9798 /* _Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Name.swift; sourceTree = "<group>"; };
+		E7519308211FE79500CC9798 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		E7519309211FE79500CC9798 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E751930A211FE79500CC9798 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		E751930F211FE97800CC9798 /* ULAAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAAPI.swift; sourceTree = "<group>"; };
 		E7AFBA2B211CA7930072C122 /* users list app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "users list app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AFBA2E211CA7930072C122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7AFBA36211CA7930072C122 /* users_list_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = users_list_app.xcdatamodel; sourceTree = "<group>"; };
@@ -89,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				E75192FD211FE23500CC9798 /* Models */,
+				E7519300211FE2F900CC9798 /* ULADataStack.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -104,6 +121,9 @@
 		E75192FE211FE26C00CC9798 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E751930A211FE79500CC9798 /* Name.swift */,
+				E7519308211FE79500CC9798 /* Picture.swift */,
+				E7519309211FE79500CC9798 /* User.swift */,
 				E7AFBA35211CA7930072C122 /* users_list_app.xcdatamodeld */,
 				E75192FF211FE27800CC9798 /* RawModels */,
 			);
@@ -113,6 +133,9 @@
 		E75192FF211FE27800CC9798 /* RawModels */ = {
 			isa = PBXGroup;
 			children = (
+				E7519304211FE78400CC9798 /* _Name.swift */,
+				E7519302211FE78400CC9798 /* _Picture.swift */,
+				E7519303211FE78400CC9798 /* _User.swift */,
 			);
 			path = RawModels;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		E7AFBA45211CA8A80072C122 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E751930F211FE97800CC9798 /* ULAAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -421,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "cd /Users/iosnomad/Documents/ios/users\\ list\\ app/users\\ list\\ app/users\\ list\\ app/Code/Domain/Models/CoreData\n\nmogenerator --swift --machine-dir \"./RawModels\" --template-var arc=true -m users_list_app.xcdatamodeld/$CURRENT_VERSION\necho Success";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -433,18 +457,26 @@
 				E7AFBA56211CAECC0072C122 /* ULAStringDefines.swift in Sources */,
 				E7AFBA6A211CD0660072C122 /* ULAUserTableViewCell.swift in Sources */,
 				E7AFBA52211CADBE0072C122 /* ULAString.swift in Sources */,
+				E7519305211FE78400CC9798 /* _Picture.swift in Sources */,
 				E7AFBA49211CA94E0072C122 /* ULADefines.swift in Sources */,
 				E7D3284F211CE17900F59E07 /* ULAUsersDataSource.swift in Sources */,
+				E7519306211FE78400CC9798 /* _User.swift in Sources */,
+				E7519307211FE78400CC9798 /* _Name.swift in Sources */,
 				E7AFBA37211CA7930072C122 /* users_list_app.xcdatamodeld in Sources */,
 				E7AFBA4C211CAA390072C122 /* ULAUIImage.swift in Sources */,
 				E7AFBA59211CC5930072C122 /* ULARootTransaction.swift in Sources */,
 				E7D3284B211CE05A00F59E07 /* ULABaseCoreTableViewDataSource.swift in Sources */,
+				E7519310211FE97800CC9798 /* ULAAPI.swift in Sources */,
 				E7AFBA64211CC9620072C122 /* ULASavedViewController.swift in Sources */,
 				E7AFBA5F211CC9360072C122 /* ULAUsersViewController.swift in Sources */,
 				E7AFBA4E211CAB100072C122 /* ULANSManagedObjectContext.swift in Sources */,
 				E7D3284D211CE10000F59E07 /* ULABaseCoreDataProvider.swift in Sources */,
+				E751930B211FE79500CC9798 /* Picture.swift in Sources */,
 				E7AFBA50211CABAA0072C122 /* ULAValidationString.swift in Sources */,
 				E7AFBA2F211CA7930072C122 /* AppDelegate.swift in Sources */,
+				E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */,
+				E751930D211FE79500CC9798 /* Name.swift in Sources */,
+				E751930C211FE79500CC9798 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

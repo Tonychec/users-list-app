@@ -9,4 +9,5 @@
 import UIKit
 
 let kDefaultCellHeight = 100
+
 let kBaseURL = "https://randomuser.me/api/"

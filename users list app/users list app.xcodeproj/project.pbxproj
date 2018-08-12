@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E75192F7211FDFEE00CC9798 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E75192FA211FDFEE00CC9798 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				E75192FB211FE07200CC9798 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		35AD3BB74D3951F044A74D2B /* Pods_users_list_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F95302B2FE86291630042A /* Pods_users_list_app.framework */; };
 		E7AFBA2F211CA7930072C122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBA2E211CA7930072C122 /* AppDelegate.swift */; };
@@ -71,6 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E75192FC211FE21900CC9798 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E75192FD211FE23500CC9798 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E75192FD211FE23500CC9798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E75192FE211FE26C00CC9798 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E75192FE211FE26C00CC9798 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E7AFBA35211CA7930072C122 /* users_list_app.xcdatamodeld */,
+				E75192FF211FE27800CC9798 /* RawModels */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E75192FF211FE27800CC9798 /* RawModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RawModels;
+			sourceTree = "<group>";
+		};
 		E7AFBA22211CA7930072C122 = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				E7AFBA2E211CA7930072C122 /* AppDelegate.swift */,
+				E7AFBA3A211CA7950072C122 /* LaunchScreen.storyboard */,
 				E7AFBA38211CA7950072C122 /* Assets.xcassets */,
 				E7AFBA43211CA8620072C122 /* Code */,
 				E7AFBA3D211CA7950072C122 /* Info.plist */,
-				E7AFBA35211CA7930072C122 /* users_list_app.xcdatamodeld */,
 			);
 			path = "users list app";
 			sourceTree = "<group>";
@@ -107,8 +153,8 @@
 				E7AFBA44211CA8A00072C122 /* Common */,
 				E7AFBA5A211CC74F0072C122 /* Controllers */,
 				E7D32847211CDFA600F59E07 /* DataDiller */,
-				E7AFBA3A211CA7950072C122 /* LaunchScreen.storyboard */,
 				E7AFBA66211CD0110072C122 /* Views */,
+				E75192FC211FE21900CC9798 /* Domain */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -279,6 +325,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = iosNomad;
 				TargetAttributes = {
+					E75192F7211FDFEE00CC9798 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					E7AFBA2A211CA7930072C122 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -298,6 +347,7 @@
 			projectRoot = "";
 			targets = (
 				E7AFBA2A211CA7930072C122 /* users list app */,
+				E75192F7211FDFEE00CC9798 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +410,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-users list app/Pods-users list app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E75192FB211FE07200CC9798 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -399,6 +462,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E75192F8211FDFEE00CC9798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E499WX8J48;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E75192F9211FDFEE00CC9798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E499WX8J48;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E7AFBA3E211CA7950072C122 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -556,6 +637,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E75192FA211FDFEE00CC9798 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75192F8211FDFEE00CC9798 /* Debug */,
+				E75192F9211FDFEE00CC9798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E7AFBA26211CA7930072C122 /* Build configuration list for PBXProject "users list app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

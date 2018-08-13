@@ -7,6 +7,7 @@
         <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="ULAUser" inverseName="name" inverseEntity="ULAUser" syncable="YES"/>
     </entity>
     <entity name="ULAPicture" representedClassName="ULAPicture" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="large" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="medium" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
@@ -25,7 +26,7 @@
     </entity>
     <elements>
         <element name="ULAName" positionX="-63" positionY="-141" width="128" height="105"/>
-        <element name="ULAPicture" positionX="-56" positionY="-15" width="128" height="105"/>
+        <element name="ULAPicture" positionX="-56" positionY="-15" width="128" height="120"/>
         <element name="ULAUser" positionX="160" positionY="-114" width="128" height="120"/>
     </elements>
 </model>

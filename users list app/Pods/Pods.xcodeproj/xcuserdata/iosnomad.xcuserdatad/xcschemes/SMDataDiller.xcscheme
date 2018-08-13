@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEBAEEC17E93F2E3B4EE9AC535737DA0"
+               BlueprintIdentifier = "0191D665363A92CBEC9CBA2FEF082DAE"
                BlueprintName = "SMDataDiller"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SMDataDiller.framework">

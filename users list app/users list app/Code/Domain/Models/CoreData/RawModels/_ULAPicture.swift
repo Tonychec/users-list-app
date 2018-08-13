@@ -5,6 +5,7 @@ import Foundation
 import CoreData
 
 public enum ULAPictureAttributes: String {
+    case image = "image"
     case large = "large"
     case medium = "medium"
     case thumbnail = "thumbnail"
@@ -38,6 +39,9 @@ open class _ULAPicture: NSManagedObject {
     }
 
     // MARK: - Properties
+
+    @NSManaged open
+    var image: NSData?
 
     @NSManaged open
     var large: String?

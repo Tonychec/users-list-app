@@ -27,7 +27,13 @@ class ULAUsersViewController: ULABaseDataViewController {
         super.viewDidLoad()
         
         navigationItem.title = ULAStrings.Tabs.users.rawValue
-        setupPaginator()
+        usersDataSource.reload {
+            self.setupPaginator()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        usersDataSource.reload()
     }
 }
 
@@ -51,14 +57,22 @@ extension ULAUsersViewController {
     }
     
     override func dataSource(_ dataSource: SMBaseDataSource!, didSelectRowAt indexPath: IndexPath!, withItem item: Any!) {
-        //TODO:
+        guard let user = item as? ULAUser else {
+            return
+        }
+        
+        let editUserVC = ULAEditViewController(user: user)
+        editUserVC.saveCallBack = { savedUser in
+            self.tabBarController?.selectedIndex = 1
+        }
+        navigationController?.pushViewController(editUserVC, animated: true)
     }
 }
 
 //MARK: - paginator
 extension ULAUsersViewController {
     
-    func setupPaginator() {
+    @objc func setupPaginator() {
         paginator = ULAPaginator(withTableView: tableView, entityName: ULAUser.entityName(), listTaskCreationHandler: ULAAPI.shared.loadUsersListCreationHendler)
         
         paginator.refreshListHandler = { [unowned self] (error) in
@@ -87,7 +101,16 @@ extension ULAUsersViewController {
                 }
             }
         }
-        
-        paginator.refreshList()
+        refreshIfNeeded()
+    }
+}
+
+//MARK: - Help Metods
+extension ULAUsersViewController {
+    
+    func refreshIfNeeded() {
+        if self.usersDataSource.dataProvider.items.isEmpty {
+            self.paginator.refreshList()
+        }
     }
 }

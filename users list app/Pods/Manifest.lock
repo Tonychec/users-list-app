@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - IHKeyboardAvoiding (4.2)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (= 4.7.2)
+  - IHKeyboardAvoiding (= 4.2)
   - SDWebImage (= 4.3.3)
   - SMDataDiller (= 0.2.1)
   - SMPullToRefresh (= 3.0.7)
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - IHKeyboardAvoiding
     - SDWebImage
     - Sync
   https://github.com/SMCorpporation/SMPodSpecs.git:
@@ -25,11 +28,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  IHKeyboardAvoiding: 9fbf816b7c3c84911964802ff110d12caf40ebef
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SMDataDiller: 1453157b1e494cc2f276194718eedfc84193c1b5
   SMPullToRefresh: a0241ee679a881a82bf61933466abe8b2b839c43
   Sync: 3cd2b84622c964220d7c7ba6e29823e096f1c1cf
 
-PODFILE CHECKSUM: a9542db7855fc802e8dddf2bcdfbde07d7094f6b
+PODFILE CHECKSUM: 33d16fc42a1c1088caa9c9ecb375add5f861f316
 
 COCOAPODS: 1.5.3

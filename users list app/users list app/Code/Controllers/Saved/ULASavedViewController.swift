@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SMDataDiller
 
 class ULASavedViewController: ULAUsersViewController {
     
@@ -14,5 +15,13 @@ class ULASavedViewController: ULAUsersViewController {
         super.viewDidLoad()
 
         navigationItem.title = ULAStrings.Tabs.saved.rawValue
+    }
+    
+    override func setupPaginator() { }
+    
+    override func iDataProvider() -> SMBaseDataProvider {
+        let dataProvider = ULAUsersDataProvider()
+        dataProvider.predicate = NSPredicate(format: "\(ULAUserAttributes.isSaved) == true")
+        return dataProvider
     }
 }

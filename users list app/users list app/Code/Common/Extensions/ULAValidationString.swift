@@ -9,12 +9,12 @@
 
 import Foundation
 
-typealias FFValidationString = String
-typealias FFValidationResult = (isValid: Bool, errorMessage: String?)
+typealias ULAValidationString = String
+typealias ULAValidationResult = (isValid: Bool, errorMessage: String?)
 
-extension FFValidationString {
+extension ULAValidationString {
     
-    func isEmailValid() -> FFValidationResult {
+    func isEmailValid() -> ULAValidationResult {
         guard !self.isEmpty else {
             return (false, ULAStrings.Errors.emailBlank.rawValue)
         }
@@ -26,9 +26,9 @@ extension FFValidationString {
         return (result, result ? nil : ULAStrings.Errors.emailNotValid.rawValue)
     }
     
-    func isLengthValid(stringPrefixForErrorMessage: String = "") -> FFValidationResult {
-        let errorMessage = stringPrefixForErrorMessage.isEmpty ? ULAStrings.Errors.blank.rawValue.capitalizingFirstLetter() : stringPrefixForErrorMessage + " " + ULAStrings.Errors.blank.rawValue
-        let comp = self.components(separatedBy: CharacterSet.whitespaces).filter { !$0.isEmpty }
+    func isLengthValid(stringPrefixForErrorMessage: String = "") -> ULAValidationResult {
+        let errorMessage = stringPrefixForErrorMessage.isEmpty ? ULAStrings.Errors.length.rawValue.capitalizingFirstLetter() : stringPrefixForErrorMessage + " " + ULAStrings.Errors.length.rawValue
+        let comp = self.trimmingCharacters(in: .whitespaces)
         
         if comp.count > 1, comp.count < 31 {
             return (true, nil)

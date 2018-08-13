@@ -16,7 +16,7 @@ class ULAStrings {
 extension ULAStrings {
     
     enum Errors: String {
-        case blank = "shouldn't be blank"
+        case length = "not valid length"
         case emailNotValid = "This doesn’t look like a valid email. Please check the inputted email"
         case emailBlank = "Email shouldn't be blank"
         case someError = "Some error occured. Please try again later"
@@ -29,6 +29,17 @@ extension ULAStrings {
     enum Tabs: String {
         case users = "Users"
         case saved = "Saved"
+    }
+}
+
+//MARK: - Actions
+extension ULAStrings {
+    
+    enum Actions: String {
+        case save = "Save"
+        case camera = "Camera"
+        case photoLibrary = "Photo Library"
+        case cancel = "Cancel"
     }
 }
 

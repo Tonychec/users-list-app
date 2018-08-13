@@ -8,6 +8,7 @@
 
 import Foundation
 import SMDataDiller
+import Sync
 
 class ULABaseCoreTableViewDataSource: SMBaseTableViewDataSource {
     
@@ -24,6 +25,17 @@ class ULABaseCoreTableViewDataSource: SMBaseTableViewDataSource {
         dataProvider.reload {[weak self] in
             self?.tableView.reloadData()
             completion?()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let item = self.dataProvider.item(at: indexPath) as? NSManagedObject {
+                ULADataStack.stack.mainContext.delete(item)
+                ULADataStack.stack.mainContext.blockAndSave()
+                self.dataProvider.items.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .right)
+            }
         }
     }
 }

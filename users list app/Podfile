@@ -9,4 +9,5 @@ target 'users list app' do
 	pod "Sync”, “4.1.3”
 	pod "SDWebImage", "4.3.3"
 	pod "SMPullToRefresh", "3.0.7"
+	pod "IHKeyboardAvoiding", "4.2"
 end

@@ -22,6 +22,11 @@
 
 /* Begin PBXBuildFile section */
 		35AD3BB74D3951F044A74D2B /* Pods_users_list_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F95302B2FE86291630042A /* Pods_users_list_app.framework */; };
+		E710523C21213A94005D581E /* ULAEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710523A21213A94005D581E /* ULAEditViewController.swift */; };
+		E710523D21213A94005D581E /* ULAEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E710523B21213A94005D581E /* ULAEditViewController.xib */; };
+		E710523F2121433D005D581E /* ULAImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710523E2121433D005D581E /* ULAImagePicker.swift */; };
+		E710524321214AE0005D581E /* ULAValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E710524221214AE0005D581E /* ULAValidator.swift */; };
+		E7362F802121522700081259 /* ULAFormatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7362F7F2121522700081259 /* ULAFormatedTextField.swift */; };
 		E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44A21200D4200AD0E9B /* ULAPaginator.swift */; };
 		E749B44E2120135E00AD0E9B /* ULABaseDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44D2120135E00AD0E9B /* ULABaseDataViewController.swift */; };
 		E749B4502120140000AD0E9B /* ULAUsersDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749B44F2120140000AD0E9B /* ULAUsersDataProvider.swift */; };
@@ -62,6 +67,11 @@
 		1C7EE24620C573516B4FC54D /* Pods-users list app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.release.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.release.xcconfig"; sourceTree = "<group>"; };
 		301CBCEA02297966BB8002D4 /* Pods-users list app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-users list app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-users list app/Pods-users list app.debug.xcconfig"; sourceTree = "<group>"; };
 		42F95302B2FE86291630042A /* Pods_users_list_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_users_list_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E710523A21213A94005D581E /* ULAEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAEditViewController.swift; sourceTree = "<group>"; };
+		E710523B21213A94005D581E /* ULAEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ULAEditViewController.xib; sourceTree = "<group>"; };
+		E710523E2121433D005D581E /* ULAImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAImagePicker.swift; sourceTree = "<group>"; };
+		E710524221214AE0005D581E /* ULAValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAValidator.swift; sourceTree = "<group>"; };
+		E7362F7F2121522700081259 /* ULAFormatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAFormatedTextField.swift; sourceTree = "<group>"; };
 		E749B44A21200D4200AD0E9B /* ULAPaginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAPaginator.swift; sourceTree = "<group>"; };
 		E749B44D2120135E00AD0E9B /* ULABaseDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULABaseDataViewController.swift; sourceTree = "<group>"; };
 		E749B44F2120140000AD0E9B /* ULAUsersDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULAUsersDataProvider.swift; sourceTree = "<group>"; };
@@ -113,11 +123,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E710523921213A76005D581E /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E710523A21213A94005D581E /* ULAEditViewController.swift */,
+				E710523B21213A94005D581E /* ULAEditViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		E749B44921200D1700AD0E9B /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				E749B44A21200D4200AD0E9B /* ULAPaginator.swift */,
 				E749B4512120178E00AD0E9B /* ULAAlert.swift */,
+				E710523E2121433D005D581E /* ULAImagePicker.swift */,
+				E710524221214AE0005D581E /* ULAValidator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 			children = (
 				E749B45721201B3B00AD0E9B /* ULARefreshView.swift */,
 				E749B45921201B8400AD0E9B /* ULARefreshViewAnimator.swift */,
+				E7362F7F2121522700081259 /* ULAFormatedTextField.swift */,
 			);
 			path = Refresh;
 			sourceTree = "<group>";
@@ -280,6 +302,7 @@
 		E7AFBA5A211CC74F0072C122 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E710523921213A76005D581E /* Edit */,
 				E749B44C2120134000AD0E9B /* Base */,
 				E7AFBA5B211CC9010072C122 /* Users */,
 				E7AFBA5C211CC9090072C122 /* Saved */,
@@ -431,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E710523D21213A94005D581E /* ULAEditViewController.xib in Resources */,
 				E7AFBA3C211CA7950072C122 /* LaunchScreen.storyboard in Resources */,
 				E7AFBA39211CA7950072C122 /* Assets.xcassets in Resources */,
 				E7AFBA60211CC9360072C122 /* ULAUsersViewController.xib in Resources */,
@@ -467,6 +491,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-users list app/Pods-users list app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SMDataDiller/SMDataDiller.framework",
 				"${BUILT_PRODUCTS_DIR}/SMPullToRefresh/SMPullToRefresh.framework",
@@ -475,6 +500,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMDataDiller.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMPullToRefresh.framework",
@@ -511,7 +537,9 @@
 				E749B44E2120135E00AD0E9B /* ULABaseDataViewController.swift in Sources */,
 				E7AFBA49211CA94E0072C122 /* ULADefines.swift in Sources */,
 				E749B45E212040D400AD0E9B /* ULAName.swift in Sources */,
+				E710524321214AE0005D581E /* ULAValidator.swift in Sources */,
 				E749B454212019F500AD0E9B /* ULATableView.swift in Sources */,
+				E7362F802121522700081259 /* ULAFormatedTextField.swift in Sources */,
 				E7D3284F211CE17900F59E07 /* ULAUsersDataSource.swift in Sources */,
 				E7AFBA37211CA7930072C122 /* users_list_app.xcdatamodeld in Sources */,
 				E7AFBA4C211CAA390072C122 /* ULAUIImage.swift in Sources */,
@@ -523,6 +551,7 @@
 				E749B44B21200D4200AD0E9B /* ULAPaginator.swift in Sources */,
 				E7519310211FE97800CC9798 /* ULAAPI.swift in Sources */,
 				E7AFBA64211CC9620072C122 /* ULASavedViewController.swift in Sources */,
+				E710523F2121433D005D581E /* ULAImagePicker.swift in Sources */,
 				E7AFBA5F211CC9360072C122 /* ULAUsersViewController.swift in Sources */,
 				E7AFBA4E211CAB100072C122 /* ULANSManagedObjectContext.swift in Sources */,
 				E749B45F212040D400AD0E9B /* ULAUser.swift in Sources */,
@@ -533,6 +562,7 @@
 				E749B4502120140000AD0E9B /* ULAUsersDataProvider.swift in Sources */,
 				E7519301211FE2F900CC9798 /* ULADataStack.swift in Sources */,
 				E749B466212040DE00AD0E9B /* _ULAUser.swift in Sources */,
+				E710523C21213A94005D581E /* ULAEditViewController.swift in Sources */,
 				E749B4522120178E00AD0E9B /* ULAAlert.swift in Sources */,
 				E749B464212040DE00AD0E9B /* _ULAName.swift in Sources */,
 			);

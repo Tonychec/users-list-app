@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "698CD4AF6C4A6A915C2F32CA2410D1E6"
-               BlueprintName = "Sync"
+               BlueprintIdentifier = "033B2F5EFC98402794E5FA4A2E42BD9F"
+               BlueprintName = "IHKeyboardAvoiding"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Sync.framework">
+               BuildableName = "IHKeyboardAvoiding.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

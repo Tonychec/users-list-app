@@ -23,14 +23,22 @@ extension ULAUserTableViewCell: SMCell {
 
     func fill(with domainObject: Any!) {
 
-        guard let item = domainObject as? ULAUser, let avatarURLStr = item.picture?.medium else {
+        guard let item = domainObject as? ULAUser else {
             return
         }
 
-        avatar.sd_setImage(with: URL(string: avatarURLStr), placeholderImage: #imageLiteral(resourceName: "placeholderAvatar"), options: []) { [weak self] (image, _, _, _) in
-            if let image = image {
-                self?.avatar.image = image
+        if let imageData = item.picture?.image as Data? {
+            avatar.image = UIImage(data: imageData, scale: 1.0)
+        } else if let avatarURLStr = item.picture?.large {
+            avatar.sd_setImage(with: URL(string: avatarURLStr), placeholderImage: #imageLiteral(resourceName: "placeholderAvatar"), options: []) { [weak self] (image, _, _, _) in
+                if let image = image {
+                    item.picture?.image = UIImagePNGRepresentation(image) as NSData?
+                    item.managedObjectContext?.blockAndSave()
+                    self?.avatar.image = image
+                }
             }
+        } else {
+            avatar.image = #imageLiteral(resourceName: "placeholderAvatar")
         }
         nameLabel.text = item.fullName
         phonLabel.text = item.phone

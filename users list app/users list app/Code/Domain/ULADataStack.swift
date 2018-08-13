@@ -15,9 +15,8 @@ import Sync
 class ULADataStack {
     
     static let shared = ULADataStack()
-    static var stack = DataStack(modelName: "UserListApp")
+    static var stack = DataStack(modelName: "users_list_app")
 }
-
 
 extension DataStack {
     

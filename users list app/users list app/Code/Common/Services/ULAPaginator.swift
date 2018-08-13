@@ -111,6 +111,7 @@ class ULAPaginator {
     }
 
     func parse(items: [[String : Any]], operations: Sync.OperationOptions, handler: ((_ result: Error?) -> Void)?) {
+        
         Sync.changes(items, inEntityNamed: entityName, dataStack: ULADataStack.stack, operations: operations, completion: { (error) in
             handler?(error)
         })

@@ -18,3 +18,4 @@ let kSomeErrorCode = -1
 let kDefaultResultQuantity = 10
 
 let kPullRefreshViewHeight: CGFloat = 40
+let kDefaultCellHeight: CGFloat = 80

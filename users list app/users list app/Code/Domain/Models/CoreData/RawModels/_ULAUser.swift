@@ -6,6 +6,7 @@ import CoreData
 
 public enum ULAUserAttributes: String {
     case email = "email"
+    case isSaved = "isSaved"
     case phone = "phone"
 }
 
@@ -40,7 +41,10 @@ open class _ULAUser: NSManagedObject {
     // MARK: - Properties
 
     @NSManaged open
-    var email: String?
+    var email: String
+
+    @NSManaged open
+    var isSaved: NSNumber?
 
     @NSManaged open
     var phone: String?

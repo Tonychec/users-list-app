@@ -13,18 +13,19 @@
         <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="ULAUser" inverseName="picture" inverseEntity="ULAUser" syncable="YES"/>
     </entity>
     <entity name="ULAUser" representedClassName="ULAUser" syncable="YES">
-        <attribute name="email" optional="YES" attributeType="String" syncable="YES">
+        <attribute name="email" attributeType="String" syncable="YES">
             <userInfo>
                 <entry key="hyper.isPrimaryKey" value="true"/>
             </userInfo>
         </attribute>
+        <attribute name="isSaved" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="name" maxCount="1" deletionRule="Cascade" destinationEntity="ULAName" inverseName="user" inverseEntity="ULAName" syncable="YES"/>
         <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ULAPicture" inverseName="user" inverseEntity="ULAPicture" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ULAName" positionX="-54" positionY="9" width="128" height="105"/>
-        <element name="ULAPicture" positionX="-36" positionY="36" width="128" height="105"/>
-        <element name="ULAUser" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="ULAName" positionX="-63" positionY="-141" width="128" height="105"/>
+        <element name="ULAPicture" positionX="-56" positionY="-15" width="128" height="105"/>
+        <element name="ULAUser" positionX="160" positionY="-114" width="128" height="120"/>
     </elements>
 </model>

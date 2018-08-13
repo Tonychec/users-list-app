@@ -8,6 +8,7 @@
 
 import UIKit
 import SMDataDiller
+import SDWebImage
 
 class ULAUserTableViewCell: UITableViewCell {
 
@@ -17,25 +18,25 @@ class ULAUserTableViewCell: UITableViewCell {
     
 }
 
-////MARK: - SMCell
-//extension ULAUserTableViewCell: SMCell {
-//
-//    func fill(with domainObject: Any!) {
-//
-//        guard let item = domainObject as? FFNotification else {
-//            return
-//        }phonLabel
-//
-//        avatar.sd_setImage(with: , placeholderImage: #imageLiteral(resourceName: "placeholderAvatar"), options: []) { [weak self] (image, _, _, _) in
-//            if let image = image {
-//                self?.avatarImageView.image = image
-//            }
-//        }
-//        nameLabel.text = ""
-//        phonLabel.text = ""
-//    }
-//
-//    static func nibName() -> String! {
-//        return String(describing: ULAUserTableViewCell.self)
-//    }
-//}
+//MARK: - SMCell
+extension ULAUserTableViewCell: SMCell {
+
+    func fill(with domainObject: Any!) {
+
+        guard let item = domainObject as? ULAUser, let avatarURLStr = item.picture?.medium else {
+            return
+        }
+
+        avatar.sd_setImage(with: URL(string: avatarURLStr), placeholderImage: #imageLiteral(resourceName: "placeholderAvatar"), options: []) { [weak self] (image, _, _, _) in
+            if let image = image {
+                self?.avatar.image = image
+            }
+        }
+        nameLabel.text = item.fullName
+        phonLabel.text = item.phone
+    }
+
+    static func nibName() -> String! {
+        return String(describing: ULAUserTableViewCell.self)
+    }
+}
